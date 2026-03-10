@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="./custom_style.css">
+</head>
+<body>
+  <!-- Header / Top Bar -->
+  <header class="fk-header" id="hero-header">
+    <div class="fk-header-inner">
+      <div class="fk-logo">
+        <span class="fk-logo-text">Flipkart</span>
+        <span class="fk-logo-sub">Explore <span class="fk-logo-plus">Plus</span></span>
+      </div>
+
+      <form class="fk-search" autocomplete="off">
+        <button type="submit" class="fk-search-icon" aria-label="Search">
+          🔍
+        </button>
+        <input
+          type="text"
+          placeholder="Search for Products, Brands and More"
+          aria-label="Search for Products, Brands and More"
+        />
+        <button type="button" class="fk-search-mic" aria-label="Voice search">
+          🎤
+        </button>
+      </form>
+
+      <nav class="fk-header-actions">
+        <button class="fk-login-btn" id="loginBtn">
+          <span>Login</span>
+        </button>
+        <button  class="fk-login-btn" id="offerBtn">
+          <span>Check Offers</span>
+        </button>
+        <button class="fk-more-btn" id="moreBtn">
+          <span>More</span>
+          <span class="fk-arrow">▼</span>
+        </button>
+        <button class="fk-cart-btn">
+          🛒
+          <span>Cart</span>
+        </button>
+      </nav>
+    </div>
+
+    
+
+
+  
+
+    <!-- More dropdown -->
+    <div class="fk-more-dropdown" id="moreDropdown" aria-hidden="true">
+      <ul>
+        <li>Notification Preferences</li>
+        <li>24x7 Customer Care</li>
+        <li>Advertise</li>
+        <li>Download App</li>
+      </ul>
+    </div>
+
+    <!-- Category strip -->
+    <nav class="fk-category-strip">
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Grocery</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Mobiles</span>
+      </button>
+      <button class="fk-cat-item has-dropdown" data-cat="fashion">
+        <div class="fk-cat-icon"></div>
+        <span>Fashion</span>
+        <span class="fk-cat-arrow">▼</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Electronics</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Home &amp; Furniture</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Appliances</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Travel</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Beauty, Toys &amp; More</span>
+      </button>
+      <button class="fk-cat-item">
+        <div class="fk-cat-icon"></div>
+        <span>Two Wheelers</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Offer popup -->
+   <div id="Header-popup">
+    <h2>Repulic Day Offer = 50%</h2>
+    <p>For All Products</p>
+   </div>
+  <!-- Fashion dropdown (simple visual representation) -->
+  <div class="fk-cat-dropdown" id="fashionDropdown" aria-hidden="true">
+    <div class="fk-cat-dropdown-inner">
+      <div>
+        <h4>Men's Top Wear</h4>
+        <a href="#">T-Shirts</a>
+        <a href="#">Shirts</a>
+        <a href="#">Sweatshirts</a>
+      </div>
+      <div>
+        <h4>Women's Ethnic</h4>
+        <a href="#">Sarees</a>
+        <a href="#">Kurtas &amp; Kurtis</a>
+        <a href="#">Dress Material</a>
+      </div>
+      <div>
+        <h4>Footwear</h4>
+        <a href="#">Casual Shoes</a>
+        <a href="#">Sports Shoes</a>
+        <a href="#">Sandals</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="fk-main">
+    <!-- Hero / Banner -->
+    <section class="fk-hero">
+      <div class="fk-hero-slide">
+        <div class="fk-hero-content">
+          <h2>Big Savings Days</h2>
+          <p>Top deals on Mobiles, Electronics, Fashion &amp; more</p>
+          <button class="fk-hero-cta">Shop Now</button>
+        </div>
+      </div>
+      <div class="fk-hero-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Deals Row -->
+    <section class="fk-strip-card">
+      <header class="fk-strip-header">
+        <div>
+          <h2>Top Offers</h2>
+          <p>Offers you can't resist</p>
+        </div>
+        <button class="fk-view-all">VIEW ALL</button>
+      </header>
+      <div class="fk-product-row">
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Best of Electronics</h3>
+          <p class="fk-price">From ₹999</p>
+          <p class="fk-tagline">Top Brands</p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Beauty &amp; Grooming</h3>
+          <p class="fk-price">Up to 60% Off</p>
+          <p class="fk-tagline">Great Savings</p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Home Decor Range</h3>
+          <p class="fk-price">From ₹199</p>
+          <p class="fk-tagline">Best Picks</p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Fashion Deals</h3>
+          <p class="fk-price">Min 50% Off</p>
+          <p class="fk-tagline">Trending Styles</p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Kitchen Essentials</h3>
+          <p class="fk-price">From ₹299</p>
+          <p class="fk-tagline">Daily Use</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="fk-grid-section">
+      <header class="fk-strip-header">
+        <div>
+          <h2>Best of Electronics</h2>
+          <p>Top picks for you</p>
+        </div>
+        <button class="fk-view-all">VIEW ALL</button>
+      </header>
+      <div class="fk-product-grid">
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Smartphone XYZ</h3>
+          <p class="fk-price">₹14,999</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.3 ★</span>
+            <span class="fk-rating-count">23,456 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Wireless Earbuds</h3>
+          <p class="fk-price">₹1,299</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.1 ★</span>
+            <span class="fk-rating-count">8,234 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Smartwatch Pro</h3>
+          <p class="fk-price">₹2,999</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.5 ★</span>
+            <span class="fk-rating-count">12,110 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Gaming Laptop</h3>
+          <p class="fk-price">₹69,999</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.6 ★</span>
+            <span class="fk-rating-count">5,430 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>DSLR Camera</h3>
+          <p class="fk-price">₹49,999</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.4 ★</span>
+            <span class="fk-rating-count">3,201 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Bluetooth Speaker</h3>
+          <p class="fk-price">₹1,799</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.2 ★</span>
+            <span class="fk-rating-count">9,876 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Tablet 10.1"</h3>
+          <p class="fk-price">₹11,499</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.0 ★</span>
+            <span class="fk-rating-count">4,321 Ratings</span>
+          </p>
+        </article>
+        <article class="fk-product-card">
+          <div class="fk-product-img"></div>
+          <h3>Power Bank 20,000mAh</h3>
+          <p class="fk-price">₹1,099</p>
+          <p class="fk-rating">
+            <span class="fk-rating-badge">4.3 ★</span>
+            <span class="fk-rating-count">7,654 Ratings</span>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="fk-footer">
+    <div class="fk-footer-top">
+      <div>
+        <h4>ABOUT</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Flipkart Stories</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="#">Payments</a>
+        <a href="#">Shipping</a>
+        <a href="#">Cancellation &amp; Returns</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div>
+        <h4>POLICY</h4>
+        <a href="#">Return Policy</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Security</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div>
+        <h4>SOCIAL</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="fk-footer-address">
+        <h4>Mail Us:</h4>
+        <p>
+          Flipkart Internet Private Limited,<br />
+          Buildings Alyssa, Begonia &amp;<br />
+          Clove Embassy Tech Village,<br />
+          Outer Ring Road, Devarabeesanahalli Village,<br />
+          Bengaluru, 560103, Karnataka, India
+        </p>
+      </div>
+    </div>
+    <div class="fk-footer-bottom">
+      <div>© 2007-2026 Flipkart.com</div>
+      <div>Payments</div>
+    </div>
+  </footer>
+
+  <!-- Simple Login Modal -->
+  <div class="fk-modal-backdrop" id="loginModal" aria-hidden="true">
+    <div class="fk-modal">
+      <header class="fk-modal-header">
+        <h3>Login</h3>
+        <button class="fk-modal-close" id="loginCloseBtn" aria-label="Close login">✕</button>
+      </header>
+      <div class="fk-modal-body">
+        <p>Get access to your Orders, Wishlist and Recommendations</p>
+        <input type="text" placeholder="Enter Email/Mobile number" />
+        <button class="fk-hero-cta fk-modal-cta">Request OTP</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="dom_manipulation.js"></script>
+</body>
+</html>
